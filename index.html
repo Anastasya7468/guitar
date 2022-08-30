@@ -26,16 +26,27 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div class="popup-overlay" id="myOverlay"  onclick="closeModal()">
-        <div class="popuptext">
-            Забронировать урок
-            <div>
-                <label  for="name">Имя</label>
-                <input  class="lastname" type="text" id="name" >
+    <div class="popup-overlay" id="myOverlay"  >
+        <div class="popup-window">
+            <div class="popup-head">
+                <h1  class="popup-head__title">Забронировать урок</h1>
+                    <span></span>
+                    <div class="popup-head__close" onclick="closeModal()">
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div>
-                <label for="lastname">Фамилия</label>
-                <input class="lastname" type="text" id="lastname" >
+            <div class="popup-body">
+                <label class="popup-body__name" for="name">Имя</label>
+                <input  class="popup-body__name" type="text" id="name" >
+                <label class="popup-body__name" for="lastname">Фамилия</label>
+                <input class="popup-body__name" type="text" id="lastname" >
+                <label class="popup-body__name" for="phone">Телефон</label>
+                <input class="popup-body__name" type="text" id="phone" >
+                <label class="popup-body__name" for="data">Дата</label>
+                <input class="popup-body__name" type="date" id="data" >
+                <button class="buttons__main-btn main-btn popup" onclick="closeModal()">Отправить
+                </button>
             </div>
         </div>
     </div>
@@ -195,7 +206,7 @@
                 В своём стремлении улучшить пользовательский опыт мы упускаем, что диаграммы связей, вне зависимости от их уровня, должны быть описаны максимально подробно. Как принято считать, реплицированные с зарубежных источников, современные исследования, инициированные исключительно синтетически, указаны как претенденты на роль ключевых факторов.</p>
                 <!-- Кнопки -->
                 <div class="third-section__button buttons">
-                    <button class="buttons__main-btn main-btn">Забронировать <br> урок </button>
+                    <button class="buttons__main-btn main-btn" onclick="openModal()">Забронировать <br> урок </button>
                     <div class="third-section__icon-btn buttons__icon-btn">
                     <img src="icons/Иконка чата 1.svg" alt="chat">
                     <p class="buttons__text">Есть <br> вопросы?</p>
