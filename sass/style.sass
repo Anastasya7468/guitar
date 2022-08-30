@@ -26,24 +26,51 @@ $color-blue: #6EA2EF
 $color-orange: #EA8B67
 $color-grey: #DEDEDE
 
+body
+    position: relative
+
+.nav
+    position: sticky
+    top: 0px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    height: 80px
+    align-items: center
+    background: linear-gradient(90deg, #7bc8f7 ,#ffb195 )
+    opacity: 90%
+    z-index: 7
+    &__logo
+        padding-left: 15px
+        padding-top: 10px
+        width: 135px
+        z-index: 8
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 60px
+        font-size: 18px
+        font-weight: bold
+        &:last-child
+            margin-right: 20px
+        a
+            text-decoration: none
+            color: black
+
 .container
     max-width: 1140px
     margin: 0 auto
     position: relative
+
 .first-section
     position: relative
-    min-height: 800px
+    min-height: 825px
     background: #F0F0F0
-    padding-top: 19px
     overflow: hidden
-    &__nav-conteiner
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        height: 70px
-        align-items: center
-    &__logo
-        width: 135px
     &__content-container
         display: flex
         flex-direction: row
@@ -57,28 +84,15 @@ $color-grey: #DEDEDE
         top: 650px
         right: -120px
 
-.nav-menu
-    &__list
-        display: flex
-        flex-direction: row
-    &__list-item
-        margin-right: 60px
-        font-size: 18px
-        font-weight: bold
-        &:last-child
-            margin-right: 0px
-        a
-            text-decoration: none
-            color: black
-
 .left-wrapper
     position: relative
     img
         position: relative
         z-index: 4
+        top: 10px
     &__rectangle-blue
         position: absolute
-        top: 150px
+        top: 200px
         left: -50px
         width: 599.45px
         height: 210.76px
@@ -92,7 +106,7 @@ $color-grey: #DEDEDE
         width: 650.94px
         height: 220px
         left: -30px
-        top: 160px
+        top: 210px
         background: $color-orange
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         border-radius: 99px
@@ -103,7 +117,7 @@ $color-grey: #DEDEDE
         width: 588.53px
         height: 202.8px
         left: 10px
-        top: 190px
+        top: 240px
         background: $color-grey
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         border-radius: 100px
@@ -138,8 +152,6 @@ $color-grey: #DEDEDE
         margin-right: 21px
         &:last-child
             margin-right: 0px
-        // i
-        //     font-size: 21px
 
 .title
     font-size: 72px
@@ -156,22 +168,70 @@ $color-grey: #DEDEDE
 .buttons
     display: inline-flex
     &__main-btn
-            margin-right: 33px
-            width: 200px
-            height: 60px
-            background: $color-orange
-            border-radius: 100px
-            border: none
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-            font-size: 18px
-            color: white
+        margin-right: 33px
+        width: 200px
+        height: 60px
+        background: $color-orange
+        border-radius: 100px
+        border: none
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        font-size: 18px
+        color: white
+    &__main-btn:hover
+        color: black
+        cursor: pointer
+        transform: scale(1.05)
+        // width: 210px
+        // height: 65px
     &__icon-btn
-            display: inline-flex
-            align-items: center
+        display: inline-flex
+        align-items: center
+    &__icon-btn:hover
+        cursor: pointer
+        transform: scale(1.05)
     img
-            margin-right: 17px
+        margin-right: 17px
     &__text
-            font-size: 16px
+        font-size: 16px
+
+.popup-overlay
+    visibility: hidden
+    position: absolute
+    overflow: auto
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.5)
+    z-index: 11
+
+.popuptext
+    position: fixed
+    width: 600px
+    height: 300px
+    background-color: $color-blue
+    color: white
+    font-size: 22px
+    text-align: center
+    border-radius: 20px
+    padding: 16px 0
+    z-index: 10
+    top: 30%
+    left: 30%
+
+.show 
+    visibility: visible
+
+.name
+    margin-top: 15px
+    border-radius: 10px
+    border: none
+
+
+.lastname
+    margin-top: 15px
+    border-radius: 10px
+    border: none
 
 .elipse
     width: 186px
@@ -259,6 +319,7 @@ $color-grey: #DEDEDE
     
 .cards-item_orange
     background: $color-orange
+
 .cards-item_blue
     background: $color-blue
 
@@ -274,6 +335,11 @@ $color-grey: #DEDEDE
         span
             font-size: 42px
             font-weight: bold
+
+.icons
+    &__item:hover
+        background: $color-orange
+        transform: scale(1.2)
 
 .third-section
     min-height: 600px
@@ -350,12 +416,12 @@ $color-grey: #DEDEDE
         top: 100px
         right: 100px
     .first-section
-        min-height: 600px
+        min-height: 520px
         &__first-elipse
             right: 90px
             top: 90px
         &__second-elipse
-            top: 430px
+            top: 330px
     .second-section
         min-height: 570px
     .cards-item
@@ -387,26 +453,25 @@ $color-grey: #DEDEDE
         width: 720px
     .left-wrapper
         img
-            width: 530px
-            top: -50px
+            width: 480px
         &__rectangle-blue
             width: 380px
             height: 125px
-            top: 81px
+            top: 120px
         &__rectangle-orange
             width: 410px
             height: 130px
-            top: 90px
+            top: 130px
         &__rectangle-grey
             width: 380px
             height: 125px
-            top: 115px
+            top: 145px
     .title
         font-size: 58px
     .right-wrapper
-        top: 7px
-        right: -55px
-        width: 350px
+        top: 20px
+        right: 0px
+        width: 300px
         &__text
             max-width: 340px
             margin-bottom: 20px
@@ -417,12 +482,13 @@ $color-grey: #DEDEDE
         &__text
             font-size: 14px
     .first-section
-        min-height: 300px
+        min-height: 450px
+        padding-top: 20px
         &__first-elipse 
             right: -15px
             top: 10px
         &__second-elipse
-            top: 400px
+            top: 300px
             right: -50px
     .elipse
         width: 150px
@@ -515,7 +581,7 @@ $color-grey: #DEDEDE
         right: -100%
         width: 50%
         height: 100vh
-        background: $color-orange
+        background: linear-gradient(-90deg, #7bc8f7 ,#ffb195 )
         z-index: 10
         transition: 0.6s all 
         &__list
@@ -556,7 +622,7 @@ $color-grey: #DEDEDE
     .left-wrapper
         display: none
     .first-section
-        min-height: 350px
+        min-height: 300px
         &__first-elipse
             right: 150px
         &__second-elipse
