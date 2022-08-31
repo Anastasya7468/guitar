@@ -225,7 +225,7 @@ body
         padding-top: 15px
         font-size: 40px
     &__close
-        top: 30px
+        top: 35px
         right: 7px
         position: fixed
         width: 30px
@@ -237,27 +237,30 @@ body
             display: block
             margin-bottom: -2px
             &:nth-child(1)
-                transform: translateY(3px) rotate(-45deg)
+                transform:  rotate(-45deg)
             &:nth-child(2)
-                transform: translateY(3px) rotate(45deg)
+                transform:  rotate(45deg)
     &__close:hover
         cursor: pointer
         transform: scale(1.25)
-
 
 .popup-body
     background-color: $color-grey
     padding-top: 15px
     padding-bottom: 15px
-    &__name
+    &__data
         width: 90%
         display: flex
         flex-wrap: wrap
         border: none
         margin-left: 5%
         margin-right: 5%
-        margin-bottom: 10px
+        margin-bottom: 3px
         color: black
+    &__input
+        margin-bottom: 15px
+    &__btn
+        font-size: 24px
 
 .elipse
     width: 186px

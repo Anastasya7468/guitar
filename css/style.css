@@ -621,7 +621,7 @@ body {
   font-size: 40px;
 }
 .popup-head__close {
-  top: 30px;
+  top: 35px;
   right: 7px;
   position: fixed;
   width: 30px;
@@ -635,10 +635,10 @@ body {
   margin-bottom: -2px;
 }
 .popup-head__close span:nth-child(1) {
-  transform: translateY(3px) rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .popup-head__close span:nth-child(2) {
-  transform: translateY(3px) rotate(45deg);
+  transform: rotate(45deg);
 }
 .popup-head__close:hover {
   cursor: pointer;
@@ -650,15 +650,21 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.popup-body__name {
+.popup-body__data {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   border: none;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   color: black;
+}
+.popup-body__input {
+  margin-bottom: 15px;
+}
+.popup-body__btn {
+  font-size: 24px;
 }
 
 .elipse {
