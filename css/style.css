@@ -667,6 +667,7 @@ body {
 }
 .popup-body__btn {
   font-size: 24px;
+  margin: 0;
 }
 .popup-body__chatbox {
   margin: 0 auto;
