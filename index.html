@@ -58,6 +58,26 @@
             </div>
         </div>
     </div>
+    <!-- Чат -->
+    <div class="popup-overlay" id="myOverlay2"  >
+        <div class="popup-window">
+            <div class="popup-head">
+                <h1  class="popup-head__title"> Задайте вопрос</h1>
+                <div class="popup-head__close" onclick="closeModal2()">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-body__chatbox">
+                </div>
+                <div class="popup-body__messages">
+                    <input class="popup-body__textmessages" type="text">
+                    <img class="popup-body__send" src="/icons/send-message.svg" alt="send" onclick="closeModal2()">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Навигационное меню -->
     <div class="hamburger">
         <span></span>
@@ -119,7 +139,7 @@
                 <div class="right-wrapper__button buttons">
                     <button class="buttons__main-btn main-btn popup" onclick="openModal()">Забронировать <br>  урок
                     </button>
-                    <div class="right-wripper__icon-btn buttons__icon-btn">
+                    <div class="right-wripper__icon-btn buttons__icon-btn" onclick="openModal2()">
                         <img src="icons/Иконка чата 1.svg" alt="chat">
                         <p class="buttons__text">Есть <br> вопросы?</p>
                     </div>
@@ -215,7 +235,7 @@
                 <!-- Кнопки -->
                 <div class="third-section__button buttons">
                     <button class="buttons__main-btn main-btn" onclick="openModal()">Забронировать <br> урок </button>
-                    <div class="third-section__icon-btn buttons__icon-btn">
+                    <div class="third-section__icon-btn buttons__icon-btn" onclick="openModal2()">
                     <img src="icons/Иконка чата 1.svg" alt="chat">
                     <p class="buttons__text">Есть <br> вопросы?</p>
                     </div>

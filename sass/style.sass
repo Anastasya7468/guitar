@@ -220,7 +220,8 @@ body
 
 .popup-head
     height: 70px
-    background-color: $color-blue
+    background: linear-gradient(90deg, #7bc8f7 ,#ffb195 )
+    opacity: 90%
     &__title
         padding-top: 15px
         font-size: 40px
@@ -261,6 +262,29 @@ body
         margin-bottom: 15px
     &__btn
         font-size: 24px
+    &__chatbox
+        text-align:left
+        margin:0 auto
+        margin-bottom:25px
+        padding:10px
+        background:#fff
+        height:270px
+        width: 90%
+        overflow:auto
+    &__messages
+        width: 90%
+        display: flex
+        margin: 0 auto
+    &__textmessages
+        width: 90%
+        border: none
+        margin: 0
+    &__send
+        width: 40px
+        margin-left: 10px
+    &__send:hover
+        cursor: pointer
+        transform: scale(1.1)
 
 .elipse
     width: 186px

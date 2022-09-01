@@ -42,3 +42,14 @@ function closeModal() {
   popup.classList.toggle("show");
 }
 
+function openModal2() {
+  var popup = document.getElementById("myOverlay2");
+  console.log(popup);
+  popup.classList.toggle("show");
+}
+
+function closeModal2() {
+  var popup = document.getElementById("myOverlay2");
+  console.log(popup);
+  popup.classList.toggle("show");
+}
