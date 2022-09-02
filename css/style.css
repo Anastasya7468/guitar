@@ -704,6 +704,18 @@ body {
   transform: scale(1.15);
 }
 
+.arrow {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  z-index: 13;
+  width: 50px;
+}
+
+.arrow:hover {
+  transform: scale(1.15);
+}
+
 .elipse {
   width: 186px;
   height: 186px;
