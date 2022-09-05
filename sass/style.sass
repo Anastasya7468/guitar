@@ -519,6 +519,17 @@ body
         &__img
             left: -33px
             width: 414px
+    .popup-window
+        width: 400px
+        font-size: 20px
+    .popup-head
+        &__title
+            font-size: 30px
+            padding-top: 20px
+        &__close
+            width: 20px
+            top: 30px
+            right: 5px
 
 @media (max-width: 991px)
     .container
@@ -793,6 +804,25 @@ body
             // display: none
             max-width: 300px
             left: -50px
+    .popup-window
+        width: 70vw
+    .popup-head
+        height: 40px
+        &__title
+            padding-top: 10px
+            font-size: 20px
+    .popup-body
+        padding-top: 5px
+        padding-bottom: 5px
+        font-size: 18px
+        &__input
+            margin-bottom: 5px
+        &__btn
+            margin-top: 10px
+            height: 35px
+            font-size: 18px
+        &__chatbox
+            height: 150px
 
 @media (max-width: 575px)
     .container
@@ -862,3 +892,15 @@ body
         &__img
             width: 250px
             left: 37px
+    .popup-head
+        height: 55px
+        &__close
+            right: -25px
+            z-index: 40
+            span
+                background-color: white
+    .popup-body
+        &__btn
+            margin-top: 10px
+            height: 35px
+            font-size: 18px
