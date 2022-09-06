@@ -1156,6 +1156,32 @@ body {
   .footer__title {
     margin-bottom: 8px;
   }
+  .popup-window {
+    width: 70vw;
+  }
+  .popup-head {
+    height: 40px;
+  }
+  .popup-head__title {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .popup-body {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  .popup-body__input {
+    margin-bottom: 5px;
+  }
+  .popup-body__btn {
+    margin-top: 10px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .popup-body__chatbox {
+    height: 150px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -1347,32 +1373,6 @@ body {
   .footer__img {
     max-width: 300px;
     left: -50px;
-  }
-  .popup-window {
-    width: 70vw;
-  }
-  .popup-head {
-    height: 40px;
-  }
-  .popup-head__title {
-    padding-top: 10px;
-    font-size: 20px;
-  }
-  .popup-body {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 18px;
-  }
-  .popup-body__input {
-    margin-bottom: 5px;
-  }
-  .popup-body__btn {
-    margin-top: 10px;
-    height: 35px;
-    font-size: 18px;
-  }
-  .popup-body__chatbox {
-    height: 150px;
   }
 }
 @media (max-width: 575px) {
